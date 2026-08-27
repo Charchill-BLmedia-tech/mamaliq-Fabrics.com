@@ -1,0 +1,255 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f6;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #d4af37;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION WITH BACKGROUND IMAGE & GOLDEN OVERLAY */
+.hero-section {
+  position: relative;
+  background-image: url('Coll1.2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.hero-overlay-box {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.92), rgba(184, 134, 11, 0.92));
+  padding: 50px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 780px;
+  color: #000000;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.hero-overlay-box h1 {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-overlay-box p {
+  color: #111111;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.btn-primary {
+  display: inline-block;
+  background-color: #2e8b57;
+  color: #ffffff;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #246b43;
+  transform: translateY(-2px);
+}
+
+/* CATALOG SECTION */
+.catalog-section {
+  padding: 80px 8%;
+  background-color: #0f0f11;
+  text-align: center;
+}
+
+.catalog-section h2 {
+  font-size: 2.4rem;
+  color: #00000;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* PRODUCT CARD (WHITE BACKGROUND) */
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid #e5e5ea;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  position: relative;
+  height: 240px;
+  background-color: #ffffff;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #d4af37;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.card-details {
+  padding: 20px;
+  background: #ffffff;
+}
+
+.card-details h3 {
+  font-size: 1.15rem;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 1.25rem;
+  color: #b8860b;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.price span {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 400;
+}
+
+.btn-order {
+  width: 100%;
+  background: #25d366;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.btn-order:hover {
+  background: #1ebc57;
+}
+
+/* FOOTER */
+.footer-section {
+  padding: 60px 8%;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  background: #ffffff;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #555;
+  margin-top: 6px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hero-overlay-box {
+    padding: 35px 20px;
+  }
+
+  .hero-overlay-box h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-overlay-box p {
+    font-size: 1rem;
+  }
+}
